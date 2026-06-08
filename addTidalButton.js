@@ -15,8 +15,8 @@
         const albumLinks = document.querySelector('div.albumLinks');
         if (!albumLinks || document.querySelector('a[title="Tidal"]')) return;
 
-        const artist = document.querySelector('[itemprop="byArtist"] [itemprop="name"]')?.textContent.trim();
-        const album = document.querySelector('h1.albumTitle [itemprop="name"]')?.textContent.trim();
+        const artist = document.querySelector('.albumTitle')?.textContent.trim();
+        const album = document.querySelector('.artist')?.textContent.trim();
 
         let tidalUrl;
         if (artist && album) {
